@@ -4,12 +4,28 @@
 .image img{
     width:100%;
 }
+a{
+    color:black;
+}
 
-
-
-
-
-
-
-
-
+a:hover{
+    text-decoration: none;
+    background:red;
+    padding:2%;
+    border-radius:20px;
+}
+ 
+ 
+ ul li {
+    list-style:none;
+ }
+ 
+ ul li {
+     display:inline;
+     margin:20px;
+     
+ }
+ 
+ ul{
+     text-align:center;
+ }
