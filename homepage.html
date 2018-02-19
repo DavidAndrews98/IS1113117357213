@@ -1,34 +1,90 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+.bgimg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: <img src ="http://summeronquad.ucc.ie/wp-content/uploads/2016/06/CUBS-2017-logo.png">;
+    min-height: 100%;
+}
+</style>
+<body>
 
-        <title>117357213</title>
-        <link rel= "stylesheet" href= "mystylesheet.css" type= "text/css"/>
-    </head>
-    <body>
-                
-        	<ul>
-        
-                    <h1 class= "mainheading"> 117357213 - IS1113 Project </h1>
-                   
-                   <li> <a href= "CV/cv_page1.html"> Curriculm Vitae</a></li>
-                   <li><a href= "Interests/sports.html">Interests</a></li>
-                    <li><a href="E-Business/E-Business1.php">Ebus</a></li>
-        	</ul>
-        	
+<!-- Sidebar with image -->
+<nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
+  <div class="bgimg"></div>
+</nav>
 
-	
+<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="CV/cv_page1.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="CV/cv_page1.html"> Curriculm Vitae</a>
+    <a href="Interests/sports.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="Interests/sports.html">Interests</a>
+    <a href="E-Business/E-Business1.php" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="E-Business/E-Business1.php">Ebus</a>
+  </div>
+</nav>
 
-        <div class="image">
-            <img src ="http://summeronquad.ucc.ie/wp-content/uploads/2016/06/CUBS-2017-logo.png">
-        </div>
-        
-      
+<!-- Page Content -->
+<div class="w3-main w3-padding-large" style="margin-left:40%">
+
+  <!-- Menu icon to open sidebar -->
+  <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+  <!-- Header -->
+  <header class="w3-container w3-center" style="padding:128px 16px" id="home">
+    <h1 class="w3-jumbo"><b>IS1113 Project</b></h1>
+    <p>David Andrews 117357213.</p>
+    <img src ="http://summeronquad.ucc.ie/wp-content/uploads/2016/06/CUBS-2017-logo.png" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
+    <img src="http://summeronquad.ucc.ie/wp-content/uploads/2016/06/CUBS-2017-logo.png" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
+   
+  </header>
+
+   
              <div id="Footer" style = "top : 480px;">
 		<p>Copyright &COPY; All Rights Reserved. David Andrews 2018.</p>
    </div>
 
-       
-    </body>
+  <!-- Add Google Maps -->
+<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+
+// Open and close sidebar
+function openNav() {
+    document.getElementById("mySidebar").style.width = "60%";
+    document.getElementById("mySidebar").style.display = "block";
+}
+
+function closeNav() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+ </body>
 </html>
+

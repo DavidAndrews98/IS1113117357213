@@ -11,8 +11,8 @@ a{
 a:hover{
     text-decoration: none;
     background:red;
-    padding:2%;
-    border-radius:20px;
+    padding: 1%;
+    border-radius:100px;
 }
  
  
@@ -22,7 +22,7 @@ a:hover{
  
  ul li {
      display:inline;
-     margin:20px;
+     margin:15px;
      
  }
  
