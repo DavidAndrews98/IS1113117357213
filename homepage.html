@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>IS1113 Project</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -14,7 +14,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     background-repeat: no-repeat;
     background-size: cover;
     background-image: <img src ="http://summeronquad.ucc.ie/wp-content/uploads/2016/06/CUBS-2017-logo.png">;
-    min-height: 100%;
+    min-height: 50%;
 }
 </style>
 <body>
@@ -30,9 +30,9 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <i class="fa fa-remove"></i>
   </a>
   <div class="w3-bar-block w3-center">
-    <a href="CV/cv_page1.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="CV/cv_page1.html"> Curriculm Vitae</a>
-    <a href="Interests/sports.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="Interests/sports.html">Interests</a>
-    <a href="E-Business/E-Business1.php" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="E-Business/E-Business1.php">Ebus</a>
+    <a href="CV/cv_page1.html" class="w3-bar-item w3-button w3-text-grey w3-hover-red" onclick="CV/cv_page1.html"> Curriculm Vitae</a>
+    <a href="Interests/sports.html" class="w3-bar-item w3-button w3-text-grey w3-hover-red" onclick="Interests/sports.html">Interests</a>
+    <a href="E-Business/E-Business1.php" class="w3-bar-item w3-button w3-text-grey w3-hover-red" onclick="E-Business/E-Business1.php">E-Business</a>
   </div>
 </nav>
 
@@ -40,7 +40,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 <div class="w3-main w3-padding-large" style="margin-left:40%">
 
   <!-- Menu icon to open sidebar -->
-  <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+  <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-red" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
 
   <!-- Header -->
   <header class="w3-container w3-center" style="padding:128px 16px" id="home">
@@ -52,29 +52,14 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   </header>
 
    
-             <div id="Footer" style = "top : 480px;">
+      <!-- Footer id -->
+      <div id="Footer" style = "top : 480px;">
 		<p>Copyright &COPY; All Rights Reserved. David Andrews 2018.</p>
    </div>
 
-  <!-- Add Google Maps -->
+ 
+<!-- Open and close sidebar -->
 <script>
-function myMap()
-{
-  myCenter=new google.maps.LatLng(41.878114, -87.629798);
-  var mapOptions= {
-    center:myCenter,
-    zoom:12, scrollwheel: false, draggable: false,
-    mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
-
-  var marker = new google.maps.Marker({
-    position: myCenter,
-  });
-  marker.setMap(map);
-}
-
-// Open and close sidebar
 function openNav() {
     document.getElementById("mySidebar").style.width = "60%";
     document.getElementById("mySidebar").style.display = "block";
