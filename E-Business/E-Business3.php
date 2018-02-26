@@ -16,7 +16,7 @@ session_start();
   <li><a href="E-Business/E-Business1.php">E-Business</a></li>
 </ul>
 
-<div style="padding:20px;margin-top:30px;background-color:#DFECFF;height:1500px;">
+
         <title>RECEIPT</title>
     </head>
     <body>

@@ -10,10 +10,10 @@
   <li><a class="active" href="../homepage.html">Home</a></li>
   <li><a href="../CV/cv_page1.html">CV</a></li>
   <li><a href="../Interests/sports.html">Interests</a></a></li>
-  <li><a href="E-Business/E-Business1.php">E-Business</a></li>
+  <li><a href="../E-Business/E-Business1.php">E-Business</a></li>
 </ul>
 
-<div style="padding:20px;margin-top:30px;background-color:#DFECFF;height:1500px;">
+
         <title>Select Product</title>
         
         <!--jQuery-->
@@ -28,7 +28,7 @@
         
         <br/>
         
-        <form method ="POST" action ="Ebus2.php">
+        <form method ="POST" action ="E-Business2.php">
             
             <label for="salesforce">
                 <input type ="radio" id="salesforce" name="product" checked onClick="disablebtnProceed()"/>
@@ -93,7 +93,7 @@
         
         <br/>
         <button onClick="calcSub()">Calculate Cost</button>
-        <a role="button" href="Ebus1.php">Clear Choice</a>
+        <a role="button" href="E-Business.php">Clear Choice</a>
        
         </div>
         

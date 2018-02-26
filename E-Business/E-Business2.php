@@ -15,11 +15,10 @@ session_start();
   <li><a class="active" href="../homepage.html">Home</a></li>
   <li><a href="../CV/cv_page1.html">CV</a></li>
   <li><a href="../Interests/sports.html">Interests</a></a></li>
-  <li><a href="E-Business/E-Business.php">E-Business</a></li>
+  <li><a href="E-Business/E-Business1.php">E-Business</a></li>
 </ul>
 
-<div style="padding:20px;margin-top:30px;background-color:#DFECFF;height:1500px;">
-        
+
         <title> Enter Details</title>
         
         
@@ -33,7 +32,7 @@ session_start();
         
             <br />
             
-            <form method = "POST" action = "Ebus3.php">
+            <form method = "POST" action = "E-Business3.php">
                 
                 <label for="user_name">
                      Name
@@ -59,7 +58,7 @@ session_start();
             
             <button onClick="validateDetails()"> Validate </button>
             
-            <script type="text/javascript" src="ebus2_validator.js"></script>
+            <script type="text/javascript" src="E-Business2_validator.js"></script>
             
             <?php
             //Set session variables
