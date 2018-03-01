@@ -1,17 +1,37 @@
 <!DOCTYPE html>
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<head>
+        <link rel= "stylesheet" href="ebusstyle.css" type="text/css" />
 
-</head>
-<body>
-
-<ul>
-  <li><a class="active" href="../homepage.html">Home</a></li>
-  <li><a href="../CV/cv_page1.html">CV</a></li>
-  <li><a href="../Interests/sports.html">Interests</a></a></li>
-  <li><a href="../E-Business/E-Business1.php">E-Business</a></li>
-</ul>
+<header>
+		<div id = "Title">
+		<h1> eBusiness </h1>
+		</div>
+		
+   </header>
+   
+	<nav>
+      
+		<div id="menu">
+			<ul>
+				<li><a href="../homepage.html">Homepage</a></li>
+				<li><a href="../CloudServices.html">Andrew's Cloud Services</a></li>
+				
+			</ul>
+		</div>
+	</nav>
+        
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/> 
 
 
         <title>Select Product</title>
@@ -93,10 +113,12 @@
         
         <br/>
         <button onClick="calcSub()">Calculate Cost</button>
-        <a role="button" href="E-Business.php">Clear Choice</a>
+        <a role="button" href="E-Business1.php">Clear Choice</a>
        
         </div>
-        
+        <div id="Footer">
+		<p>Copyright &COPY; All Rights Reserved. Design By David Andrews</p>
+   </div>
     </body>
     
 </html>
