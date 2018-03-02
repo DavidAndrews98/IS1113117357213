@@ -128,8 +128,9 @@ div.container{
 		float: left;
 	
 		}
-		#menu ul {
-			margin-left: 15%;
+	#menu ul {
+			margin-left:15%;
+			margin-right:15%;
 		}
 
 		#menu li {

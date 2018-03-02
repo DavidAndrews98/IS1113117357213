@@ -19,7 +19,7 @@ session_start();
 		<div id="menu">
 			<ul>
 				<li><a href="../homepage.html">Homepage</a></li>
-				<li><a href="../CloudServices.html">Andrew's Cloud Services</a></li>
+				<li><a href="..CloudServices/CloudServices.html">Andrew's Cloud Services</a></li>
 				
 			</ul>
 		</div>
@@ -42,53 +42,46 @@ session_start();
         <title> Enter Details</title>
         
         
-        <!--jQuery-->
+          <!--jQuery-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="E-Business2_validator.js"></script>
     </head>
-    
     <body>
+        <h4>Please enter your payment details</h4>
         
-        <h4>Please enter your payment details.</h4>
-        
-            <br />
+
+        <form action="E-Business3.php" method="POST">
             
-            <form method = "POST" action = "E-Business3.php">
-                
-               <label for="user_name" class="lbl_name">
+            <label for="user_name" class="lbl_name">
                 Name
                 <input type="name" id="user_name" name="user_name" placeholder="Enter Your Name">
             </label>
             
             <br>
-                
-                <label for="user_email" class="lbl_email">
+            
+            <label for="user_email" class="lbl_email">
                 Email address
                 <input type="email" id="user_email" name="user_email" placeholder="example@gmail.com">
             </label>
-            <br/>
-                
-                <label for="user_pin">
-                     PIN 
-                </label>
-                
-                <input type="password" id="user_pin" placeholder="Card Pin" maxlength="4">
+            
+            <br>
+
+                    <label for="user_pin">PIN</label>
                     
-                <button type="Submit" id="btnPurchase" disabled> 
-                    Proceed with Purchase 
-                </button>
-                
+                    <input type="password" id="user_pin" placeholder="Card PIN" maxlength="4">
+
+                <button type="submit" id="btnPurchase" disabled>Proceed with Purchase</button>
+              
             </form>
             
-            <br />
-            
-            <button onClick="validateDetails()"> Validate </button>
-            
-            <script type="text/javascript" src="E-Business2_validator.js"></script>
+            <br/>
+            <button onClick="validateDetails()">Validate</button>
             
             <?php
-            //Set session variables
+            // Set session variables
             $_SESSION["total"] = $_POST["total"];
             ?>
+    
             
             </div>
       <div id="Footer">
