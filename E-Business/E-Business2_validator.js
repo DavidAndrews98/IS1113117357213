@@ -23,10 +23,7 @@ function validateDetails(){
     if (name == ""){
         alert("Please enter a name.");
     }
-    else if (!name.match(/^[a-zA-Z]+$/ && /^[a-zA-Z]+$/)){
-        alert('Only letters are allowed in a name.');
-    }
-    
+   
     var email;
     
     email = document.getElementById("user_email").value;

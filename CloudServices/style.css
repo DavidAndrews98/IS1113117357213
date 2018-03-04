@@ -76,8 +76,8 @@ a.button{
 
 }
 a{
- text-decoration:none;
- color:#cc0000;
+ text-decoration:underline;
+ color:blue;
 }
 a.button,div.container{
  float:left;
