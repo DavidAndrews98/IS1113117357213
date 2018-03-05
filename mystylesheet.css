@@ -75,10 +75,11 @@ header
 			top:21%;
 			left:0%;
 			width:100%;
-			position:Absolute;
+			position:absolute;
 			background:#554E4D;
 			border-bottom: 1px solid #0066cc;
 			z-index:100;
+			
 		}
 		
 		#menu ul {

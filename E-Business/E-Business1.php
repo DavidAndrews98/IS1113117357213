@@ -15,8 +15,9 @@
 		<div id="menu">
 			<ul>
 				<li><a href="../homepage.html">Homepage</a></li>
-				<li><a href="..CloudServices/CloudServices.html">Andrew's Cloud Services</a></li>
-				
+				<li><a href="../CloudServices/CloudServices.html">Andrew's Cloud Services</a></li>
+
+
 			</ul>
 		</div>
 	</nav>
