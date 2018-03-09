@@ -12,6 +12,12 @@ header
 		
 		}
 		
+		#Header {
+			position:fixed;
+			margin-left:15%;
+			margin-right:15%;
+		}
+		
 		#Title
 		{
 			top: 20%;
